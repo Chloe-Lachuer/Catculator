@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+@font-face {
+    font-family: "MeowPolice";
+    src: url("Fonts/hello_honey.otf");
+}
+
+@font-face {
+    font-family: "Ecran";
+    src: url("./Fonts/résultat.ttf");
+}
+
+@font-face {
+    font-family: "Chalculatrice";
+    src: url("./Fonts/Goldie_Rainbow.ttf");
+}
+
+body {
+
+    width: 100%;
+    height: 100%;
+
+
+
+
+
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+h1 {
+    font-size: 150px;
+    font-family: "MeowPolice";
+    text-align: center;
+}
+
+h6 {
+    font-size: 40px;
+    font-family: "Chalculatrice";
+    text-align: center;
+    align-self: center;
+}
+
+.center {
+    display: flex;
+
+}
+
+
+
+
+
+
+.calculette {
+    background-color: rgb(255, 138, 29);
+    margin: 5% 38% 5% 38%;
+    border: solid 1.5px rgb(37, 24, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    height: 60%;
+}
+
+.screen {
+    width: 90%;
+    height: 20%;
+    background-color: rgb(109, 126, 108);
+    margin: 20px;
+    align-self: center;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    font-size: 60px;
+    font-family: "Ecran";
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    border-top: solid 3px rgb(3, 27, 4);
+    border-left: solid 3px rgb(3, 27, 4);
+    border-right: solid 2px rgb(3, 27, 4);
+    border-bottom: solid 2px rgb(3, 27, 4);
+
+}
+
+.screen p {
+    margin: 0 5px 0 0;
+}
+
+.keyboard {
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat (5, 50px);
+    grid-gap: 7px;
+}
+
+.footer {
+    display: flex;
+    height: 10%;
+    width: 100%;
+
+}
+
+.footer p {
+    text-align: center;
+
+}
