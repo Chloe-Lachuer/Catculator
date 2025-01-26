@@ -30,17 +30,22 @@ body {
 
     width: 100%;
     height: 100%;
+}
+.page-wrapper {
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    align-items:center;
 
-
-
-
-
-
+    
 }
 
 .header {
     display: flex;
+    align-items:center;
     flex-direction: column;
+    justify-content:flex-start;
+    padding-bottom:5%;
 
 
 }
@@ -58,68 +63,85 @@ h6 {
     align-self: center;
 }
 
-.center {
-    display: flex;
-
-}
-
 
 
 
 
 
 .calculette {
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
     background-color: rgb(255, 138, 29);
-    margin: 5% 38% 5% 38%;
     border: solid 1.5px rgb(37, 24, 0);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 24%;
-    height: 60%;
+    align-self:center;
+    flex-grow:2;
+    width:50%;
+    padding:10px;
+    
+    
+    
+    
 }
 
 .screen {
-    width: 90%;
+    width: 100%;
     height: 20%;
     background-color: rgb(109, 126, 108);
-    margin: 20px;
-    align-self: center;
+    align-self: stretch;
     border-radius: 10px;
     display: flex;
     padding: 5px;
-    font-size: 60px;
     font-family: "Ecran";
     flex-direction: row-reverse;
-    align-items: flex-end;
     border-top: solid 3px rgb(3, 27, 4);
     border-left: solid 3px rgb(3, 27, 4);
     border-right: solid 2px rgb(3, 27, 4);
     border-bottom: solid 2px rgb(3, 27, 4);
+    margin: 0 0 10px 0;
+    font-size:100%;
 
 }
 
 .screen p {
     margin: 0 5px 0 0;
+    align-self: flex-end;
+    font-size: 90%;
+    
 }
 
 .keyboard {
-    align-self: center;
-
+    padding:5px;
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat (5, 50px);
+    align-self:stretch;
+    flex-grow:2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-gap: 7px;
+}
+
+.key-0 {
+    grid-column: span 2;
+
+}
+
+.key-equal {
+    grid-row: span 2;
+
 }
 
 .footer {
     display: flex;
-    height: 10%;
-    width: 100%;
+    justify-content:center;
+    height: 10vh;
+    width: 100vh;
+    align-self:center;
 
 }
 
 .footer p {
     text-align: center;
+    align-self:center;
 
 }
